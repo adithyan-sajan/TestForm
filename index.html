@@ -14,7 +14,11 @@
   </head>
   <body>
     <div class="left-container">
-      <img src="assets/side.avif" alt="" width="" />
+      <!-- <img src="assets/side.avif" alt="" width="" /> -->
+      <div class="odin-logo">
+        <img src="assets/odin-lined.png" alt="" />
+        <span class="odin-text">ODIN</span>
+      </div>
     </div>
     <div class="right-container">
       <div class="right-top">
@@ -26,46 +30,57 @@
         </p>
         <p>Do it Now</p>
       </div>
-      <form action="" class="right-middle">
-        <p>Let's get started</p>
-        <div class="form-row">
-          <div class="row-element">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="firstname" id="first-name" />
+      <form action="su">
+        <div class="right-middle">
+          <p>Let's get started</p>
+          <div class="form-row">
+            <div class="row-element">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="firstname" id="first-name" />
+            </div>
+            <div class="row-element">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="lastname" id="last-name" />
+            </div>
           </div>
-          <div class="row-element">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="lastname" id="last-name" />
+          <div class="form-row">
+            <div class="row-element">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="row-element">
+              <label for="phone">PHONE</label>
+              <input type="text" inputmode="numeric" name="phone" id="phone" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="row-element">
+              <label for="password">ENTER PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="row-element">
+              <label for="repeat-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="repeat-password"
+                id="repeat-password"
+                minlength="8"
+                required
+              />
+            </div>
           </div>
         </div>
-        <div class="form-row">
-          <div class="row-element">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="row-element">
-            <label for="phone">PHONE</label>
-            <input type="text" inputmode="numeric" name="phone" id="phone" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="row-element">
-            <label for="password">ENTER PASSWORD</label>
-            <input type="password" name="password" id="password" />
-          </div>
-          <div class="row-element">
-            <label for="repeat-password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              name="repeat-password"
-              id="repeat-password"
-            />
-          </div>
+        <div class="right-bottom">
+          <button type="submit" class="button1">Create Account</button>
+          <p>Already have an account? <a href="">Sign In</a></p>
         </div>
       </form>
-      <div class="right-bottom">
-        <button class="button1">Create Account</button>
-      </div>
     </div>
   </body>
 </html>

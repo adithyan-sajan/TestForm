@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Odin";
+  src: url(assets/Norse-Bold.otf);
+}
 body {
   display: flex;
   border: 0;
@@ -15,7 +19,14 @@ label {
 }
 .left-container {
   flex: 1;
-  height: 10%;
+  height: 100vh;
+  background-image: url("assets/side.avif");
+  background-size: cover;
+}
+.odin-text {
+  font-family: "Odin", sans-serif;
+  font-size: 150px;
+  color: white;
 }
 .right-container {
   flex: 2;
@@ -24,6 +35,18 @@ label {
 
 .left-container img {
   width: 100%;
+}
+.odin-logo {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.42);
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.odin-logo img {
+  height: 100%;
+  width: auto;
 }
 
 .right-top {
@@ -64,4 +87,22 @@ label {
   background-color: #596d48;
   color: white;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+input:invalid:focus {
+  border: 2px solid red;
+}
+input {
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+input:valid:focus {
+  border: 2px solid blue;
+  outline: none;
+  border-radius: 3px;
 }
